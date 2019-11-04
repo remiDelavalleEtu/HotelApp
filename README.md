@@ -8,7 +8,7 @@ Source code of the Java example available at http://www.javaworld.com/article/20
 
 This example uses Maven as build tool.
 
-To test the web application, we will use the Jetty plugin. In order to use it, we need to declare it in our maven settings file *$HOME/.m2/settings.xml*.: 
+To test the web application, we will use the Jetty plugin. In order to use it, we need to declare it in our maven settings file *$HOME/.m2/settings.xml*.:
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -29,7 +29,7 @@ $ mvn jetty:run
 ```
 The web application will be deployed on http://localhost:8080
 
-#	Create your own repository 
+#	Create your own repository
 In order to simulate developments made by a team, you will fork an existing repository on GitHub (demarey/HotelApp) .
 
 On your computer, you will get a working copy from the forked repository to be able to work on the Hotels code.
@@ -49,11 +49,11 @@ new Hotel("Hotel Cigogne","Grand place","",2)
 ```
 You are in a hurry and you do not want to loose time: you commit without test it before! Bad idea, but let us see...
 ```bash
-$ git commit –m « adding a new hotel » 
+$ git commit –m « adding a new hotel »
 $ git push
 ```
 Now check if a build is triggered on the CI server. What is the result?
 ## Fix a problem
 As you can see, there is a problem in a test.
 
-**Exercise**: Find the test in error from the Jenkins server. 
+**Exercise**: Find the test in error from the Jenkins server.
